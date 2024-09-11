@@ -1,1 +1,2 @@
 This is a code that can give u a frame of the combination of GA and DNN, maybe still has some problems, and hope u guys can help to make it better
+u can see that so many hyperparameters in this model, both in the GA and the DNN, and in this frame, I just set nearly lowest hyperparameters that can help to run the codes quickly and simply the model, and u guys can search the hyperparameters by yourself, and change it.
