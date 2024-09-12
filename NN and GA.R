@@ -134,6 +134,14 @@ ga_model <- ga(
 # 输出遗传算法的最优结果
 summary(ga_model)
 
+# 将适应度值转为正数
+ga_model@summary[,"min"] <- -ga_model@summary[,"min"]
+ga_model@summary[,"mean"] <- -ga_model@summary[,"mean"]
+ga_model@summary[,"max"] <- -ga_model@summary[,"max"]
+ga_model@summary[,"median"] <- -ga_model@summary[,"median"]
+
+#画出每次迭代的图
+plot(ga_model)
 
 #best_solutions <- ga_model@solution
 best_params <- ga_model@solution
